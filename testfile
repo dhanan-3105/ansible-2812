@@ -229,4 +229,4 @@ getns.yaml
 
    - name : print ADs
      debug:
-       msg: {{ result }}
+       msg: "{{ result }}"
