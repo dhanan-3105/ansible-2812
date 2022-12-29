@@ -214,7 +214,7 @@ getns.yaml
       debug:
         msg: '{{result}}'
 
-
+---
 - name : List summary
   collections:
     - oracle.oci
