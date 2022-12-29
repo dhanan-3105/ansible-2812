@@ -10,4 +10,18 @@ compartments:
  - compartment_ocid: "your compartment OCID"
    fetch_hosts_from_subcompartments: false
 
+
+
+create.yaml
+------------
+
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name : create file
+      file: path=/tmp/testfile state=touch
+    - name : print
+      debug:
+       msg: file created
  
